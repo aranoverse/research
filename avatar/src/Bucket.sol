@@ -79,20 +79,20 @@ contract Bucket {
     function _getRandomIndex(uint256 seed, uint16 size) internal view returns (uint16) {
         // NOTICE: We do not to prevent miner from front-running the transaction and the contract.
         return
-            uint16(
-                uint256(
-                    keccak256(
-                        abi.encodePacked(
-                            block.difficulty,
-                            block.timestamp,
-                            msg.sender,
-                            blockhash(block.number - 1),
-                            seed,
-                            size
-                        )
+        uint16(
+            uint256(
+                keccak256(
+                    abi.encodePacked(
+                        block.difficulty,
+                        block.timestamp,
+                        msg.sender,
+                        blockhash(block.number - 1),
+                        seed,
+                        size
                     )
-                ) % size
-            );
+                )
+            ) % size
+        );
     }
 
     function getBucketInfo(uint256 ledgerType) external view returns (uint8[] memory, uint16[] memory) {

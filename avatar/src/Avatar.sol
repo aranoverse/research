@@ -324,11 +324,11 @@ contract Avatar is ReentrancyGuard, Bucket {
 
         // calculate each part of the amount
         OpenPositionParams memory params = OpenPositionParams({
-            principalAmount: (msg.value * PRINCIPAL_RATIO) / PRICE_PRECISION,
-            investAmount: (msg.value * INVEST_RATIO) / PRICE_PRECISION,
-            referrerAmount: (msg.value * REFERRER_RATIO) / PRICE_PRECISION,
-            incentiveAmount: (msg.value * INCENTIVE_RATIO) / PRICE_PRECISION,
-            investReturnRate: _safeProcessFundTargetGetInvestReturnRate(roundInfo, ledgerType)
+        principalAmount : (msg.value * PRINCIPAL_RATIO) / PRICE_PRECISION,
+        investAmount : (msg.value * INVEST_RATIO) / PRICE_PRECISION,
+        referrerAmount : (msg.value * REFERRER_RATIO) / PRICE_PRECISION,
+        incentiveAmount : (msg.value * INCENTIVE_RATIO) / PRICE_PRECISION,
+        investReturnRate : _safeProcessFundTargetGetInvestReturnRate(roundInfo, ledgerType)
         });
 
         // check target ratio
@@ -343,13 +343,13 @@ contract Avatar is ReentrancyGuard, Bucket {
             // this is users first position in this round of this ledger type
             UserRoundInfo memory _userRoundInfo;
             _userRoundInfo = UserRoundInfo({
-                epoch: targetEpoch,
-                totalPositionAmount: 0,
-                currentPrincipalAmount: 0,
-                totalWithdrawnAmount: 0,
-                totalIncentiveClaimedAmount: 0,
-                totalClosedPositionCount: 0,
-                returnRateBoostedAmount: 0
+            epoch : targetEpoch,
+            totalPositionAmount : 0,
+            currentPrincipalAmount : 0,
+            totalWithdrawnAmount : 0,
+            totalIncentiveClaimedAmount : 0,
+            totalClosedPositionCount : 0,
+            returnRateBoostedAmount : 0
             });
             // push roundInfo to storage
             userRoundsInfos[ledgerType][msg.sender].push(_userRoundInfo);
@@ -365,7 +365,8 @@ contract Avatar is ReentrancyGuard, Bucket {
         if (useBoost) {
             uint256 boostCredit = userGlobalInfo.boostCredit;
             require(boostCredit >= msg.value, "Exceed boost credit");
-            params.investReturnRate += BOOST_INVEST_RETURN_RATE; // + 0.5%
+            params.investReturnRate += BOOST_INVEST_RETURN_RATE;
+            // + 0.5%
             userGlobalInfo.boostCredit -= msg.value;
         }
 
@@ -389,15 +390,15 @@ contract Avatar is ReentrancyGuard, Bucket {
             }
 
             PositionInfo memory positionInfo = PositionInfo({
-                amount: msg.value,
-                openTime: block.timestamp,
-                expiryTime: expiryTime,
-                investReturnRate: params.investReturnRate,
-                withdrawnAmount: 0,
-                incentiveAmount: 0,
-                investReturnAmount: 0,
-                index: userTotalPositionCount,
-                incentiveClaimable: true
+            amount : msg.value,
+            openTime : block.timestamp,
+            expiryTime : expiryTime,
+            investReturnRate : params.investReturnRate,
+            withdrawnAmount : 0,
+            incentiveAmount : 0,
+            investReturnAmount : 0,
+            index : userTotalPositionCount,
+            incentiveClaimable : true
             });
 
             // push position info to round ledgers
@@ -421,7 +422,7 @@ contract Avatar is ReentrancyGuard, Bucket {
                 // fetch current head node
                 LinkedPosition storage headLinkedPosition = linkedPositions[roundInfo.head];
                 PositionInfo storage headPositionInfo = roundLedgers[ledgerType][targetEpoch][headLinkedPosition.user][
-                    headLinkedPosition.userPositionIndex
+                headLinkedPosition.userPositionIndex
                 ];
                 // previous head position now is not eligible for incentive
                 headPositionInfo.incentiveClaimable = false;
@@ -434,12 +435,12 @@ contract Avatar is ReentrancyGuard, Bucket {
 
         // do transfer to platform
         {
-            (bool success, ) = platformAddress.call{
-                value: msg.value -
-                    params.principalAmount -
-                    params.investAmount -
-                    params.referrerAmount -
-                    params.incentiveAmount
+            (bool success,) = platformAddress.call{
+            value : msg.value -
+            params.principalAmount -
+            params.investAmount -
+            params.referrerAmount -
+            params.incentiveAmount
             }("");
             require(success, "Transfer failed.");
         }
@@ -554,11 +555,11 @@ contract Avatar is ReentrancyGuard, Bucket {
             require(positionInfo.incentiveClaimable, "Position not eligible");
             // update positionInfo
             payoutAmount += _safeProcessIncentiveAmount(positionInfo, roundInfo);
-        }≥roundInfo
+        }
 
         // transfer
         {
-            (bool success, ) = msg.sender.call{value: payoutAmount}("");
+            (bool success,) = msg.sender.call{value : payoutAmount}("");
             require(success, "Transfer failed.");
         }
 
@@ -598,7 +599,7 @@ contract Avatar is ReentrancyGuard, Bucket {
 
         // do transfer
         {
-            (bool success, ) = referrer.call{value: claimableAmount}("");
+            (bool success,) = referrer.call{value : claimableAmount}("");
             require(success, "Transfer failed.");
         }
 
@@ -759,8 +760,8 @@ contract Avatar is ReentrancyGuard, Bucket {
                 daysPassed = (positionInfo.expiryTime - positionInfo.openTime);
             }
             uint256 expectedInvestReturnAmount = (positionInfo.amount * positionInfo.investReturnRate * daysPassed) /
-                PRICE_PRECISION /
-                TIME_UNIT;
+            PRICE_PRECISION /
+            TIME_UNIT;
 
             // calculate the amount should be paid back from invest pool
             // 35% to total amount + expected return amount
@@ -773,9 +774,9 @@ contract Avatar is ReentrancyGuard, Bucket {
                 roundInfo.currentInvestAmount = 0;
             } else {
                 // update round info
-                unchecked {
-                    roundInfo.currentInvestAmount -= investReturnAmount;
-                }
+            unchecked {
+                roundInfo.currentInvestAmount -= investReturnAmount;
+            }
             }
 
             // check round is stop loss
@@ -821,7 +822,7 @@ contract Avatar is ReentrancyGuard, Bucket {
 
         // do transfer
         {
-            (bool success, ) = msg.sender.call{value: payoutAmount}("");
+            (bool success,) = msg.sender.call{value : payoutAmount}("");
             require(success, "Transfer failed.");
         }
 
@@ -834,8 +835,8 @@ contract Avatar is ReentrancyGuard, Bucket {
      * @param roundInfo: storage of the round info
      */
     function _safeProcessFundTargetGetInvestReturnRate(RoundInfo storage roundInfo, uint256 ledgerType)
-        internal
-        returns (uint256)
+    internal
+    returns (uint256)
     {
         FundTarget storage fundTarget = roundInfo.fundTarget;
         uint256 targetAmount = fundTarget.amount;
@@ -858,9 +859,9 @@ contract Avatar is ReentrancyGuard, Bucket {
                 if (block.timestamp - fundTarget.lastCheckTime > TIME_UNIT) {
                     // recalculate target amount
                     targetAmount =
-                        (((currentTotalAmount_d6 * 361) / 1000 / PRINCIPAL_RATIO - roundInfo.currentInvestAmount) *
-                            PRICE_PRECISION) /
-                        260000;
+                    (((currentTotalAmount_d6 * 361) / 1000 / PRINCIPAL_RATIO - roundInfo.currentInvestAmount) *
+                    PRICE_PRECISION) /
+                    260000;
 
                     // update check time and target amount to storage
                     fundTarget.lastCheckTime = block.timestamp;
@@ -900,13 +901,13 @@ contract Avatar is ReentrancyGuard, Bucket {
      * @param roundInfo: storage of the round info
      */
     function _safeProcessIncentiveAmount(PositionInfo storage positionInfo, RoundInfo storage roundInfo)
-        internal
-        returns (uint256)
+    internal
+    returns (uint256)
     {
         // calculate incentive amount
         uint256 incentiveAmount = (positionInfo.amount * roundInfo.totalPositionAmount * INCENTIVE_RATIO) /
-            roundInfo.incentiveSnapshot /
-            PRICE_PRECISION;
+        roundInfo.incentiveSnapshot /
+        PRICE_PRECISION;
 
         // with PRICE_PRECISION is due to the precision of division may result in a few wei left over
         if (roundInfo.currentIncentiveAmount < incentiveAmount + PRICE_PRECISION) {
@@ -1091,9 +1092,9 @@ contract Avatar is ReentrancyGuard, Bucket {
                     referrerGlobalInfo.totalReferrerReward += search.currentReferrerAmount;
                     emit ReferrerRewardAdded(search.currentReferrer, search.currentReferrerAmount, 0);
 
-                    unchecked {
-                        search.leftLevelDiffAmount -= search.currentReferrerAmount;
-                    }
+                unchecked {
+                    search.leftLevelDiffAmount -= search.currentReferrerAmount;
+                }
 
                     if (search.leftLevelDiffAmount == 0) {
                         search.levelDiffDone = true;
@@ -1118,9 +1119,9 @@ contract Avatar is ReentrancyGuard, Bucket {
                     referrerGlobalInfo.totalReferrerReward += search.levelSearchAmountPerReferrer;
                     emit ReferrerRewardAdded(search.currentReferrer, search.levelSearchAmountPerReferrer, 1);
 
-                    unchecked {
-                        search.leftLevelSearchAmount -= search.levelSearchAmountPerReferrer;
-                    }
+                unchecked {
+                    search.leftLevelSearchAmount -= search.levelSearchAmountPerReferrer;
+                }
 
                     if (search.leftLevelSearchAmount == 0) {
                         search.levelSearchDone = true;
@@ -1134,9 +1135,9 @@ contract Avatar is ReentrancyGuard, Bucket {
             userGlobalInfo = referrerGlobalInfo;
             search.currentUserTotalPosAmount = userGlobalInfo.totalPositionAmount;
 
-            unchecked {
-                search.depth += 1;
-            }
+        unchecked {
+            search.depth += 1;
+        }
         }
 
         // check residual referrer amount
@@ -1189,9 +1190,9 @@ contract Avatar is ReentrancyGuard, Bucket {
      * @param level: sales level (0-12)
      */
     function _getLevelToLevelSearchStep(uint8 level) internal pure returns (uint8) {
-        unchecked {
-            if (level < 5) return level * 2;
-        }
+    unchecked {
+        if (level < 5) return level * 2;
+    }
         return 10;
     }
 }
