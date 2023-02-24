@@ -13,6 +13,11 @@
         - MPC使私钥片段持有者在不泄漏数据的情况下重建私钥
     - [Lido](https://jason.mirror.xyz/63AF64V2tyjJjXXZD7GaPkpdSXGeKcQ5RozUdq2irZU)
         - doc: https://lido.fi/static/Lido:Ethereum-Liquid-Staking.pdf
+        - 细节问题
+          - 用户质押DAO Lido eth ==> stETH 
+          - DAO Lido 质押 eth ==》 eth2.0 deposit contract （涉及签名public key,signature）
+          - 节点如何进行 质押，利润获取 
+          - 节点质押的稳定性，节点如何成为验证者 ,质押详细流程需要了解
 
 --- 
 
