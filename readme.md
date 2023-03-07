@@ -93,10 +93,13 @@
 
 # Videos
 
+- [英语基础语法复习](https://www.bilibili.com/video/BV1XY411J7aG/?share_source=copy_web&vd_source=bd28e4ff5b76a6bfa6eadd8a9abd2b4f)
+
 ## Tech
 
 - [北大区块链公开课](https://www.bilibili.com/video/BV1Vt411X7JF?p=5&spm_id_from=pageDriver)
 - 精通比特币2版
+- [bit tiger 科普 paxos](https://www.bilibili.com/video/BV1TW411M7Fx/?spm_id_from=333.337.search-card.all.click&vd_source=90a71a9c86bdf0b1e0f17380403b7085)
 
 ## Movies
 
