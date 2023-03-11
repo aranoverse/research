@@ -23,6 +23,8 @@
             - DAO Lido 质押 eth ==》 eth2.0 deposit contract （涉及签名public key,signature）
             - 节点如何进行 质押，利润获取
             - 节点质押的稳定性，节点如何成为验证者 ,质押详细流程需要了解
+- [sudoswap如何节省gas](https://learnblockchain.cn/article/4655)
+- [gmx 中文QA](https://capitalismlab.substack.com/p/gmx-da3?r=1ly7b3&s=w&utm_campaign=post&utm_medium=web)
 
 --- 
 
