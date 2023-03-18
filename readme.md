@@ -1,6 +1,8 @@
 # Research list
 
-- [Tendermint](https://docs.tendermint.com/v0.34/introduction/quick-start.html)
+- Consensus
+    - [Paxos](./paxos)
+    - [Tendermint](https://docs.tendermint.com/v0.34/introduction/quick-start.html)
 - [Abstract account](./abstract-account)
 - [Avatar](https://dgfavatar.com)
   on [polygon](https://polygonscan.com/address/0xC7728354f9fe0e43514B1227162D5B0E40FaD410#code)
@@ -21,6 +23,9 @@
             - DAO Lido 质押 eth ==》 eth2.0 deposit contract （涉及签名public key,signature）
             - 节点如何进行 质押，利润获取
             - 节点质押的稳定性，节点如何成为验证者 ,质押详细流程需要了解
+- [sudoswap如何节省gas](https://learnblockchain.cn/article/4655)
+- [gmx 中文QA](https://capitalismlab.substack.com/p/gmx-da3?r=1ly7b3&s=w&utm_campaign=post&utm_medium=web)
+- [钱包基本原理](https://www.youtube.com/watch?v=Gol4KTUHUNI)
 
 --- 
 
@@ -91,10 +96,13 @@
 
 # Videos
 
+- [英语基础语法复习](https://www.bilibili.com/video/BV1XY411J7aG/?share_source=copy_web&vd_source=bd28e4ff5b76a6bfa6eadd8a9abd2b4f)
+
 ## Tech
 
 - [北大区块链公开课](https://www.bilibili.com/video/BV1Vt411X7JF?p=5&spm_id_from=pageDriver)
 - 精通比特币2版
+- [bit tiger 科普 paxos](https://www.bilibili.com/video/BV1TW411M7Fx/?spm_id_from=333.337.search-card.all.click&vd_source=90a71a9c86bdf0b1e0f17380403b7085)
 
 ## Movies
 
@@ -103,11 +111,11 @@
 - 大空投
 - 至暗时刻
 
-
 --- 
 
 # _Todo list_
 
 - MACD振荡指标
 - Code: The hidden language of computer hardware and software
+- Tendermint&P2P source code 
 
