@@ -27,6 +27,8 @@
 - [sudoswap如何节省gas](https://learnblockchain.cn/article/4655)
 - [gmx 中文QA](https://capitalismlab.substack.com/p/gmx-da3?r=1ly7b3&s=w&utm_campaign=post&utm_medium=web)
 - [钱包基本原理](https://www.youtube.com/watch?v=Gol4KTUHUNI)
+- [stargate](./stargate)
+- [layer2扩容科普](https://www.youtube.com/watch?v=HYR53OOtYkA)
 
 --- 
 
