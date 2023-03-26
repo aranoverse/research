@@ -29,6 +29,9 @@
 - [钱包基本原理](https://www.youtube.com/watch?v=Gol4KTUHUNI)
 - [stargate](./stargate)
 - [layer2扩容科普](https://www.youtube.com/watch?v=HYR53OOtYkA)
+- compound
+    - [概念介绍](https://medium.com/steaker-com/defi-%E7%9A%84%E4%B8%96%E7%95%8C-compound-%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E5%88%A9%E7%8E%87%E6%A8%A1%E5%9E%8B%E7%AF%87-95e9b303c284)
+    - [dapp learning源码解读](https://www.youtube.com/watch?v=__5mY_R4Afc)
 
 --- 
 
