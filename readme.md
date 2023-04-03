@@ -7,6 +7,7 @@
 - [Abstract account](./abstract-account)
     - [CA EOA ](https://www.xiaoyuzhoufm.com/episode/6385535ad3a5286ded648c4e)
     - [4337合约钱包分享](https://www.bilibili.com/video/BV1j34y1J774/?is_story_h5=false&p=1&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=52C68E20-8F7B-464E-86F5-A080D4E31965&share_source=WEIXIN&share_tag=s_i&timestamp=1666324313&unique_k=NU5nVAd&vd_source=90a71a9c86bdf0b1e0f17380403b7085)
+    - [4337 研究](https://blog.jlab.tech/eip4337-1)
 - [Avatar](https://dgfavatar.com)
   on [polygon](https://polygonscan.com/address/0xC7728354f9fe0e43514B1227162D5B0E40FaD410#code)
 - [Verified](https://verified.dievardump.com/)
@@ -31,6 +32,7 @@
 - [钱包基本原理](https://www.youtube.com/watch?v=Gol4KTUHUNI)
 - [stargate](./stargate)
 - [layer2扩容科普](https://www.youtube.com/watch?v=HYR53OOtYkA)
+  - [polygon zk EVM科普](https://literate-wolfsbane-bf0.notion.site/Polygon-zkEVM-Summary-1-5441326a00ac4e0e9d8a856219379631)
 - compound
     - [概念介绍](https://medium.com/steaker-com/defi-%E7%9A%84%E4%B8%96%E7%95%8C-compound-%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E5%88%A9%E7%8E%87%E6%A8%A1%E5%9E%8B%E7%AF%87-95e9b303c284)
     - [compound思考分析](https://learnblockchain.cn/article/3153)
