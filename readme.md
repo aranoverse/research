@@ -8,6 +8,7 @@
     - [CA EOA ](https://www.xiaoyuzhoufm.com/episode/6385535ad3a5286ded648c4e)
     - [4337合约钱包分享](https://www.bilibili.com/video/BV1j34y1J774/?is_story_h5=false&p=1&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=52C68E20-8F7B-464E-86F5-A080D4E31965&share_source=WEIXIN&share_tag=s_i&timestamp=1666324313&unique_k=NU5nVAd&vd_source=90a71a9c86bdf0b1e0f17380403b7085)
     - [4337 研究](https://blog.jlab.tech/eip4337-1)
+    - [dapp learning 4337分享](https://docs.google.com/presentation/d/14Xv8CeMTx30R7V1_inGLe8AbgDxpBYIL5EQFtYGaUVA/edit#slide=id.g1d57b8abe5f_0_261)
 - [Avatar](https://dgfavatar.com)
   on [polygon](https://polygonscan.com/address/0xC7728354f9fe0e43514B1227162D5B0E40FaD410#code)
 - [Verified](https://verified.dievardump.com/)
