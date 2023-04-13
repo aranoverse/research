@@ -40,6 +40,7 @@
     - [dapp learning源码解读](https://www.youtube.com/watch?v=__5mY_R4Afc)
     - https://www.defidaonews.com/media/6662323
 - [闪电贷漏洞科普](https://www.youtube.com/watch?v=_1dK61Qnv38)
+- [MEV科普](https://www.youtube.com/watch?v=QcfWrRmhXls)
 
 ---
 
