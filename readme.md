@@ -33,13 +33,15 @@
 - [钱包基本原理](https://www.youtube.com/watch?v=Gol4KTUHUNI)
 - [stargate](./stargate)
 - [layer2扩容科普](https://www.youtube.com/watch?v=HYR53OOtYkA)
-  - [polygon zk EVM科普](https://literate-wolfsbane-bf0.notion.site/Polygon-zkEVM-Summary-1-5441326a00ac4e0e9d8a856219379631)
+    - [polygon zk EVM科普](https://literate-wolfsbane-bf0.notion.site/Polygon-zkEVM-Summary-1-5441326a00ac4e0e9d8a856219379631)
 - compound
     - [概念介绍](https://medium.com/steaker-com/defi-%E7%9A%84%E4%B8%96%E7%95%8C-compound-%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E5%88%A9%E7%8E%87%E6%A8%A1%E5%9E%8B%E7%AF%87-95e9b303c284)
     - [compound思考分析](https://learnblockchain.cn/article/3153)
     - [dapp learning源码解读](https://www.youtube.com/watch?v=__5mY_R4Afc)
+    - https://www.defidaonews.com/media/6662323
+- [闪电贷漏洞科普](https://www.youtube.com/watch?v=_1dK61Qnv38)
 
---- 
+---
 
 # Book list
 
