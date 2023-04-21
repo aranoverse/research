@@ -122,6 +122,7 @@
 - [北大区块链公开课](https://www.bilibili.com/video/BV1Vt411X7JF?p=5&spm_id_from=pageDriver)
 - 精通比特币2版
 - [bit tiger 科普 paxos](https://www.bilibili.com/video/BV1TW411M7Fx/?spm_id_from=333.337.search-card.all.click&vd_source=90a71a9c86bdf0b1e0f17380403b7085)
+- [DDIA 中文翻译](https://vonng.gitbooks.io/ddia-cn/content/glossary.html)
 
 ## Movies
 
