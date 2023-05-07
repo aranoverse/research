@@ -99,6 +99,7 @@
 - [JavaScript教程](https://wangdoc.com/javascript/basic/introduction.html)
 - [Node.js  Manuel Kiessling](https://www.nodebeginner.org/index-zh-cn.html#event-driven-callbacks)
 - [React official tutorial](https://reactjs.org/tutorial/tutorial.html)
+- [Next](https://nextjs.org/learn)
 
 ## Others
 
