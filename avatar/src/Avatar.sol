@@ -2,7 +2,7 @@
 pragma solidity 0.8.14;
 
 // ReetrancyGuard
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "./@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./Bucket.sol";
 
 contract Avatar is ReentrancyGuard, Bucket {
@@ -364,6 +364,7 @@ contract Avatar is ReentrancyGuard, Bucket {
 
         if (useBoost) {
             uint256 boostCredit = userGlobalInfo.boostCredit;
+
             require(boostCredit >= msg.value, "Exceed boost credit");
             params.investReturnRate += BOOST_INVEST_RETURN_RATE;
             // + 0.5%
@@ -858,7 +859,10 @@ contract Avatar is ReentrancyGuard, Bucket {
                 // check if over 24 hours since last check
                 if (block.timestamp - fundTarget.lastCheckTime > TIME_UNIT) {
                     // recalculate target amount
-                    targetAmount =
+                    // todo: what does it mean ?
+                    // 65% x * 36.1%  / 65%
+                  //      (36.1% x   -   26% x)   / 26% = 10.1%x /  26%
+                targetAmount =
                     (((currentTotalAmount_d6 * 361) / 1000 / PRINCIPAL_RATIO - roundInfo.currentInvestAmount) *
                     PRICE_PRECISION) /
                     260000;
@@ -1101,6 +1105,7 @@ contract Avatar is ReentrancyGuard, Bucket {
                     }
                 }
             }
+
             if (!search.levelSearchDone) {
                 // level search use referrer's real level
                 search.levelSearchStep = _getLevelToLevelSearchStep(
