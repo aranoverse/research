@@ -45,6 +45,7 @@
     - [DID 科普分享](https://www.youtube.com/watch?v=Kfc0NIffAms)
     - [W3C DID标准](https://www.w3.org/TR/2022/REC-did-core-20220719/#abstract)
 - [FERC20](./ferc20)
+- [BERC20](./berc20)
 ---
 
 # Book list
