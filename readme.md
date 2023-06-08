@@ -46,6 +46,10 @@
     - [W3C DID标准](https://www.w3.org/TR/2022/REC-did-core-20220719/#abstract)
 - [FERC20](./ferc20)
 - [BERC20](./berc20)
+- erc6551 Token Bound NFT
+  - https://eips.ethereum.org/EIPS/eip-6551
+  - https://github.com/erc6551/reference
+
 ---
 
 # Book list
