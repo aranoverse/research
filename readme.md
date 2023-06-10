@@ -113,7 +113,7 @@
 - docker实战
 - 第一本docker书
 - [Pro Git](http://iissnan.com/progit/html/zh/ch1_0.html)
-
+- [Learning Prompt](https://github.com/thinkingjimmy/Learning-Prompt)
 ## Finance
 
 - 韭菜的自我修养
