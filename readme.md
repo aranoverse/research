@@ -34,6 +34,7 @@
 - [stargate](./stargate)
 - [layer2扩容科普](https://www.youtube.com/watch?v=HYR53OOtYkA)
     - [polygon zk EVM科普](https://literate-wolfsbane-bf0.notion.site/Polygon-zkEVM-Summary-1-5441326a00ac4e0e9d8a856219379631)
+    - [ETH layer2 科普](https://mp.weixin.qq.com/s/TxZ5W9rx6OF8qB4ZU9XrKA)
 - compound
     - [概念介绍](https://medium.com/steaker-com/defi-%E7%9A%84%E4%B8%96%E7%95%8C-compound-%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E5%88%A9%E7%8E%87%E6%A8%A1%E5%9E%8B%E7%AF%87-95e9b303c284)
     - [compound思考分析](https://learnblockchain.cn/article/3153)
@@ -47,10 +48,10 @@
 - [FERC20](./ferc20)
 - [BERC20](./berc20)
 - erc6551 Token Bound NFT
-  - https://eips.ethereum.org/EIPS/eip-6551
-  - https://github.com/erc6551/reference
-- uni-v2 
-  - [uni-swap自动化做市商核心算法解析](https://learnblockchain.cn/article/1494)
+    - https://eips.ethereum.org/EIPS/eip-6551
+    - https://github.com/erc6551/reference
+- uni-v2
+    - [uni-swap自动化做市商核心算法解析](https://learnblockchain.cn/article/1494)
 
 ---
 
@@ -116,6 +117,7 @@
 - 第一本docker书
 - [Pro Git](http://iissnan.com/progit/html/zh/ch1_0.html)
 - [Learning Prompt](https://github.com/thinkingjimmy/Learning-Prompt)
+
 ## Finance
 
 - 韭菜的自我修养
