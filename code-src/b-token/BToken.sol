@@ -29,7 +29,7 @@ interface AutoPool
 {
     function PoolTeam(uint256 amount) external;
 }
-
+// https://bscscan.com/address/0x4f9a1b701ab6426A8940373a1C473ca0D9bD12ED#code
 contract BCSTOKEN is  Ownable
 {
     using SafeMath for uint256;
