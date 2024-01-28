@@ -25,7 +25,7 @@ fallbackfee=0.0001
  ```
 2. btcd regtest
 ```shell
-bitcoind -deamon -regtest
+bitcoind -daemon -regtest
 ```
 
 3. create wallet
