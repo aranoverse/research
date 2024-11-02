@@ -1,0 +1,1 @@
+- [SIGHASH](https://www.btcstudy.org/2021/11/09/bitcoin-signature-types-sighash/)
