@@ -54,7 +54,7 @@
     - [uni-swap自动化做市商核心算法解析](https://learnblockchain.cn/article/1494)
 - [web3科普](https://j08v3n7cqq.feishu.cn/docs/doccnu8PLq5zJcaZJUzTaLyEOPc#Tb3wvI)
 - [Adapter Signature](https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/)
-- [bitcoin](./bitcoin.md)
+- [bitcoin](./btc/bitcoin.md)
 ---
 
 # Book list
