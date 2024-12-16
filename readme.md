@@ -55,6 +55,8 @@
 - [web3科普](https://j08v3n7cqq.feishu.cn/docs/doccnu8PLq5zJcaZJUzTaLyEOPc#Tb3wvI)
 - [Adapter Signature](https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/)
 - [bitcoin](./btc/bitcoin.md)
+- software design
+  - [hexagonal pattern](https://blog.allegro.tech/2020/05/hexagonal-architecture-by-example.html)
 ---
 
 # Book list
