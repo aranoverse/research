@@ -1,0 +1,3 @@
+- https://github.com/ccxt/ccxt
+- https://github.com/mementum/backtrader
+- https://github.com/UFund-Me/Qbot

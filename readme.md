@@ -57,6 +57,11 @@
 - [bitcoin](./btc/bitcoin.md)
 - software design
   - [hexagonal pattern](https://blog.allegro.tech/2020/05/hexagonal-architecture-by-example.html)
+  - [hexagonal-arch](./hexagonal-arch.md)
+- quant
+  - [quant](quant)
+- network protocol
+  - [webrtc](https://www.codementor.io/@parthibakumarmurugesan/a-quick-webrtc-tutorial-to-build-secure-p2p-communications-on-our-own-1tuwo14u5r)
 ---
 
 # Book list

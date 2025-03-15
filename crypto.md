@@ -1,2 +1,3 @@
 - [what-is-elliptic-curve-cryptography](https://www.keepersecurity.com/blog/zh-hans/2023/06/07/what-is-elliptic-curve-cryptography/)
 - [bitlayer2 adapter sig](https://www.chaincatcher.com/article/2z137071)
+- https://hdwallet.readthedocs.io/en/v3.2.3/
