@@ -19,3 +19,27 @@ src/main/kotlin/com/example
 │   ├── grpc/      # gRPC 适配器
 
 ```
+
+```text
+infra/                  // 基础设施层，提供外部依赖的支持
+  ├── api/              // 外部 API 交互
+  ├── persistence/      // 数据存储（数据库、缓存）
+  ├── web3/             // Web3 相关逻辑（如区块链交互）
+  ├── mq/               // mq（kafka,rabbit）
+
+example/              // 业务模块（可能是一个 Bounded Context）
+  ├── adapter/          // 适配层，外部输入输出（I/O 适配）
+  │   ├── cli/         // 命令行接口（CLI）
+  │   ├── grpc/        // gRPC 适配层
+  │   ├── rest/        // REST API 适配层
+  │   ├── persistence/ // 数据存储 适配层
+  │   ├── scheduler/   // 定时任务（调度器）
+  │
+  ├── application/      // 应用服务层（业务编排、事务管理）
+  │   ├── service/     // 应用层服务（调用 domain/service 进行业务编排）
+  │
+  ├── domain/           // 领域层（核心业务逻辑）
+      ├── model/       // 领域模型（实体、值对象）
+      ├── port/        // 端口（接口，定义对外的业务契约）
+      ├── service/     // 领域服务（核心业务逻辑）
+```
