@@ -37,6 +37,7 @@ example/              // 业务模块（可能是一个 Bounded Context）
   │
   ├── application/      // 应用服务层（业务编排、事务管理）
   │   ├── service/     // 应用层服务（调用 domain/service 进行业务编排）
+  │   ├── port/        // 端口（接口，定义对外的业务契约）
   │
   ├── domain/           // 领域层（核心业务逻辑）
       ├── model/       // 领域模型（实体、值对象）
