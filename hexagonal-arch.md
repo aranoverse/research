@@ -32,8 +32,9 @@ example/              // 业务模块（可能是一个 Bounded Context）
   │   ├── cli/         // 命令行接口（CLI）
   │   ├── grpc/        // gRPC 适配层
   │   ├── rest/        // REST API 适配层
-  │   ├── persistence/ // 数据存储 适配层
-  │   ├── scheduler/   // 定时任务（调度器）
+  │   ├── persistence/  // 数据存储 适配层
+  │   ├── listener/     // mq消费入口
+  │   ├── scheduler/    // 定时任务（调度器）
   │
   ├── application/      // 应用服务层（业务编排、事务管理）
   │   ├── service/     // 应用层服务（调用 domain/service 进行业务编排）
@@ -42,5 +43,15 @@ example/              // 业务模块（可能是一个 Bounded Context）
   ├── domain/           // 领域层（核心业务逻辑）
       ├── model/       // 领域模型（实体、值对象）
       ├── port/        // 端口（接口，定义对外的业务契约）
-      ├── service/     // 领域服务（核心业务逻辑）
+      ├── service/     // 领域服务（无状态的核心业务逻辑）
 ```
+
+
+- 外部交互接口 比如api/consumer/ listener 可以单独一个module
+- application-starter单独一个module
+- basic types 一个module
+- 注意adapter层的service stub来源于 applicaton层
+- 依赖关系 
+  - domain ← application ← adaptor 
+  - infra ← application ← adaptor 
+- 流量路径  adaptor -> application ->  infra
