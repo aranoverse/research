@@ -46,12 +46,18 @@ example/              // 业务模块（可能是一个 Bounded Context）
       ├── service/     // 领域服务（无状态的核心业务逻辑）
 ```
 
+```text
+onion-architecture-template/
+├── application/
+│   ├── auth-adapter/
+│   ├── auth-application-layer/
+│   └── service-launcher/
+├── domain/
+├── infra/
+│   ├── mq/
+│   └── persistence-mybatis/
+├── build.gradle.kts
+└── settings.gradle.kts
+```
 
-- 外部交互接口 比如api/consumer/ listener 可以单独一个module
-- application-starter单独一个module
-- basic types 一个module
-- 注意adapter层的service stub来源于 applicaton层
-- 依赖关系 
-  - domain ← application ← adaptor 
-  - infra ← application ← adaptor 
-- 流量路径  adaptor -> application ->  infra
+ 
