@@ -60,4 +60,27 @@ onion-architecture-template/
 └── settings.gradle.kts
 ```
 
- 
+ ```text
+example/              // 业务模块（可能是一个 Bounded Context）
+  ├── adapter/   // 适配层，外部输入输出（I/O 适配）
+  │   ├── inbound/        
+  │   │   ├── cli/         // 命令行接口（CLI）
+  │   │   ├── grpc/        // gRPC 适配层
+  │   │   ├── rest/        // REST API 适配层
+  │   │   ├── listener/     // mq消费入口
+  │   │   ├── scheduler/    // 定时任务（调度器）
+  │   ├── outbound/
+  │   │   ├── client/        // 三方调用
+  │   │   ├── repository/   // 数据存储 适配层实现，利用infra persistence
+  ├── application/      // 应用服务层（业务编排、事务管理）
+  │   ├── command/        
+  │   ├── query/        
+  ├── infra/             // 基础设施层
+  │    ├── config/             // 基础设施层
+  │    ├── security/             // 安全
+  │    ├── persistence/          // orm层      
+  ├── domain/           // 领域层（核心业务逻辑）
+      ├── model/       // 领域模型（实体、值对象）
+      ├── service/     // 领域服务（无状态的核心业务逻辑）
+      ├── event/     // 领域事件
+```
